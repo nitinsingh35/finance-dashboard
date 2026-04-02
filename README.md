@@ -1,23 +1,66 @@
 # Finance Dashboard UI
 
-A clean and interactive finance dashboard interface built to fulfill the frontend development requirements.
+This project is a finance dashboard web application that allows users to track income, expenses, and financial insights through an intuitive interface. It is built as a Single Page Application (SPA) using React and focuses on clean UI, state management, and user experience.
 
 ## Features
 
-- **Dashboard Overview**: Key metrics (Total Balance, Income, Expenses), Spending Breakdown (Pie Chart), and Financial Trends over time (Area Chart).
-- **Transactions Management**: Complete list of transactions featuring search, filtering by type (Income/Expense), and sorting by Date or Amount.
-- **Insights**: Computes your highest spending category, tracks your savings rate, and calculates month-over-month trend observations based on provided transactions.
-- **State Management**: Uses React Context API combined with localStorage to persist transactions and user preferences without a backend.
-- **Data Export**: Export your transactions list directly to a CSV file.
-- **Basic Role-Based UI**: Switch between `Viewer` (read-only view) and `Admin` (allows adding, editing, and deleting transactions).
-- **Dark Mode**: Fully implemented responsive Dark and Light modes.
+### 📊 Dashboard Overview
+- Total Balance, Income, Expenses
+- Spending Breakdown (Pie Chart)
+- Financial Trends (Area Chart)
+
+### 💳 Transactions Management
+- View all transactions
+- Search, filter (Income/Expense)
+- Sort by Date or Amount
+- Add, edit, delete (Admin)
+- Export to CSV
+
+### 📈 Insights
+- Highest spending category
+- Savings rate
+- Monthly comparison
+
+### 🔐 Role-Based UI
+- Viewer: Read-only access
+- Admin: Full access (Add/Edit/Delete)
+
+### 🎨 UI/UX
+- Responsive design
+- Dark & Light mode
 
 ## Tech Stack
+- React (Vite)
+- Tailwind CSS
+- Recharts
+- Lucide React
+- Local Storage
 
-- **React / Vite**
-- **Tailwind CSS** (for styling and animations)
-- **Recharts** (for data visualization)
-- **Lucide React** (for modern minimal icons)
+## How It Works
+
+- The app loads mock transaction data initially
+- All data is managed using React Context API
+- User actions (add/edit/delete/filter) update global state
+- Components automatically re-render based on state changes
+- Data is persisted using localStorage
+
+## 📸 Screenshots
+
+### Dashboard
+![dashboard](image.png)
+
+### Transactions
+![transaction](image-1.png)
+
+### Insights
+![insights](image-2.png)
+
+## Edge Cases Handled
+
+- Handles empty transaction list
+- Prevents invalid inputs
+- Viewer cannot modify data
+- Data persists after refresh
 
 ## Setup Instructions
 
